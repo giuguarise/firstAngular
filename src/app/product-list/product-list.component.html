@@ -16,7 +16,8 @@
   </button>
 
   <app-product-alerts
-  [product]="product"> <!--passa como parametro pra product-alerts -->
+  [product]="product"
+  (notify)="onNotify()"> <!--passa como parametro pra product-alerts -->
 </app-product-alerts>
 </div>
 

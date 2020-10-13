@@ -10,6 +10,7 @@ import { Output, EventEmitter } from '@angular/core';
 export class ProductAlertsComponent implements OnInit {
 
   @Input() product; //indica que valor vem do componente pai, product list component
+  @Output() notify = new EventEmitter();
   constructor() { }
 
   ngOnInit() {
